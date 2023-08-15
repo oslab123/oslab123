@@ -44,7 +44,7 @@ int arr[25],a[25];
     {
     a[p] = arr[i];
     }
-    for(int j = n-1;j<k;j--,p++)
+    for(int j = n-1;j>k;j--,p++)
     {
     a[p] = arr[j];
     }    
