@@ -45,7 +45,7 @@ int main(){
         arr[p]=a[i];
         
        }
-      for(i=n;i>k;i--,p++){
+      for(i=n-1;i>k;i--,p++){
       arr[p]=a[i];
       }
       }
