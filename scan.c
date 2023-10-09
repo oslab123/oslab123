@@ -1,6 +1,6 @@
 #include<stdio.h>
 int n,m,i,j,h,p,temp,k,total=0;
-int t[100],a[100],diff[100];
+int t[100],a[100],diff;
 void main()
 {
   printf("ENTER THE NUMBER OF TRACKS : ");
@@ -42,7 +42,7 @@ void main()
     {
       a[p]=t[i];
     }
-    for(i=n-1;i>k;i--,p++)
+    for(i=k+1;i<n-1;i++,p++)
     {
       a[p]=t[i];
     }
@@ -53,7 +53,7 @@ void main()
     {
       a[p]=t[i];
     }
-    for(i=0;i<k;i++,p++)
+    for(i=k-1;i>=0;i--,p++)
     {
       a[p]=t[i];
     }
@@ -65,7 +65,7 @@ void main()
   }
   for(total=0,j=0;j<p-1;j++)
   {
-    int diff=0;
+    diff=0;
     if(a[j]>a[j+1])
     {
       diff=a[j]-a[j+1];
